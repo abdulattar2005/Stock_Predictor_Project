@@ -3,16 +3,16 @@ Stock Price Predictor
 A machine learning project that predicts next-day stock closing prices from historical price/volume data, using both a Linear Regression baseline and more advanced ensemble models (Random Forest, Gradient Boosting).# Stock_Predictor_Project.
 
 How to run it
-bash
+
 pip install yfinance scikit-learn pandas numpy matplotlib
 
-# Real data (needs internet):
+ Real data (needs internet):
 python stock_predictor.py --ticker AAPL --start 2018-01-01 --end 2024-01-01
 
-# Your own CSV (columns: Date, Open, High, Low, Close, Volume):
+ Your own CSV (columns: Date, Open, High, Low, Close, Volume):
 python stock_predictor.py --csv my_data.csv
 
-# No internet? Run with built-in synthetic demo data:
+ No internet? Run with built-in synthetic demo data:
 python stock_predictor.py --demo
 
 It prints evaluation metrics to the console and saves two charts: prediction_results.png (actual vs. predicted) and feature_importance.png.
